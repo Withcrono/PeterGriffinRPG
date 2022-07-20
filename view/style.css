@@ -1,0 +1,167 @@
+:root /*esquema de cores*/ {
+    --cor0: #55555a;  /*cinza meio escuro*/
+    --cor1: #64646e;  /*cinza meio claro*/
+    --cor2: #32323c;  /*barra*/
+    --cor3: #414146;  /*fundo*/
+    --cor4: #fff5f5;  /*texto*/
+    --cor5: #715696;  /*cor destaque*/
+    --cor6: #6d538f;  /*destaque hover*/
+    --cor7: #fafafa;  /*fundo do bloco de desenho*/
+    --cor8: #e3e6e8;  /*bloco de desenho não ativo*/
+}
+
+body {
+    margin: 0px;
+}
+
+#bodygerador {
+    background-color: var(--cor3);
+}
+
+/* -----HEADER/CABEÇALHO E SEU CONTEÚDO----- */
+
+header {
+    padding: 5px 5px 5px 5px;
+    background-color: var(--cor2);
+    position: sticky;
+    top: 0px;
+}
+
+
+h1.titulo /*"D.I.C.E."*/ {
+    color: var(--cor4);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    margin-left: 10px;
+    width: 300px;
+}
+
+button.botaoheader /*"Contate-nos!"/"Início"*/{
+    position: absolute;
+    right: 10px;
+    top: 36px;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+button.botaoheader:hover /*pairar, ou seja, o que ocorrerá quando o mouse pairar sobre o botão*/ {
+    background-color: var(--cor0);
+    transition: 0.5s /*duração da transição*/ 0.1s /*atraso da transição*/;
+}
+
+/* -----MAIN/PRINCIPAL E SEU CONTEÚDO----- */
+
+div#inicio {
+    float:top;
+    background-image: url('EdeLaszlo_COMTAGILLO.jpg');
+    max-height: 2000px;
+}
+
+p#projeto /*"Dungeons Interactive..."(EXCLUSIVO DO INÍCIO)*/{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 150px;
+    font-size: 32px;
+    color: var(--cor4);
+    text-shadow: 3px 3px black;
+}
+
+p.descrição {
+    color: var(--cor4);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+div.seções /*espaço onde entram os blocos de seção*/{
+    background-color: var(--cor3);
+    height: 700px;
+    padding-top: 30px;
+}
+
+div.seção /*blocos de seção, incluindo título e descrição juntos*/{
+    margin: auto;
+    height: 300px;
+    width: 900px; 
+    border-radius: 10px;
+    background-color: var(--cor1);
+    overflow: hidden;
+}
+
+#seçãogerador {
+    margin-top: 30px;
+}
+
+div.caixah2 /*parte da seção que inclui o título, como "Four Against Darkness"*/ {
+    background-color: var(--cor0);
+    height: 70px;
+}
+
+h2.titulo /*"Four Against Darkness"*/{
+    color: var(--cor4);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    margin: auto 10px;
+}
+
+h2.nome {
+    color: var(--cor4);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    margin: auto 10px;
+    text-align: center;
+}
+
+button.botaoseta {
+    float: right;
+    color: var(--cor4);
+    background-color: var(--cor5);
+    border: none;
+    padding: 10px 45px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+button.botaoseta:hover {
+    background-color: var(--cor6);
+    transition: 0.5s 0.1s;
+}
+
+/* -----FOOTER/RODAPÉ E SEU CONTEÚDO----- */
+
+footer {
+    background-color: var(--cor2);
+    color: var(--cor4);
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+a#voltar /*<- Voltar*/ {
+    float: left;
+    height: 30px;
+    width: 10%;
+    left: 10px;
+    top: 36px;
+    padding: 3px 0px 0px 0px;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;    
+}
+
+div#nomesecao {
+    float: left;
+    padding: 5px 0px 0px 10px;
+}
